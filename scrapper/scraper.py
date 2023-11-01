@@ -7,8 +7,6 @@ from bs4 import BeautifulSoup
 # This function will save the data from dictionary to csv file
 
 
-
-
 with open("indeed-out.html") as fp:
     soup = BeautifulSoup(fp, 'html.parser')
     filters = soup.find_all('div', class_="yosegi-FilterPill-dropdownPillContainer")
