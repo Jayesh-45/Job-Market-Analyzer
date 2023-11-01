@@ -38,14 +38,22 @@
       <div class="row">
         <div class="col-md-8 my-5 mx-auto">
           <div class="input-group search-bar">
-            <input type="text" class="form-control" placeholder="Job title, keyword or company">
+            <form method="get" action="/" >
+            <input type="text" class="form-control" name="search_query" placeholder="Job title, keyword or company">
             <div class="">
-              <button class="btn btn-primary" type="button">Search Data</button>
+              <button class="btn btn-primary" type="submit">Search Data</button>
             </div>
+          </form>
           </div>
         </div>
       </div>
     </div>    
+
+    {% if search_query %}
+    <p>Search results for: {{ search_query }}</p>
+    <!-- Display the search results here -->
+    <p>Serach results: {{ search_results}}</p>
+    {% endif %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

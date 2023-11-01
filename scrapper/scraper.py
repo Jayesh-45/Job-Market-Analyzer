@@ -1,13 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-# payload = { 'api_key': 'ece642b4297b80c4f2ccfaee72468fef', 'url': 'https://in.indeed.com/jobs?q=Software+engineer&l=&from=searchOnHP&vjk=e6e608bac4efc851' } 
-# r = requests.get('https://api.scraperapi.com/', params=payload)
+# payload = { 'api_key': 'ece642b4297b80c4f2ccfaee72468fef', 'url': 'https://in.indeed.com/jobs?q=google' } 
+# html_doc = requests.get('https://api.scraperapi.com/', params=payload).text
 # print(r.text)
 
 # This function will save the data from dictionary to csv file
-
-
-with open("indeed-out.html") as fp:
+ 
+with open("Job-Market-Analyzer/scrapper/indeed-out.html") as fp:
     soup = BeautifulSoup(fp, 'html.parser')
     filters = soup.find_all('div', class_="yosegi-FilterPill-dropdownPillContainer")
     filter_dict = {}
@@ -26,3 +25,4 @@ with open("indeed-out.html") as fp:
             dict1[list_item_name] = list_item_value
         filter_dict[filter_name] = dict1
     print(filter_dict)
+    # return filter_dict
