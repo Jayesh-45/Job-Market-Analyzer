@@ -11,23 +11,25 @@ def getHtmlDoc(search_query): # This fuction will return html document collected
 def scrapper(search_query):
     # print("Search query inside scrapper: ", search_query)
     # Call getHtmlDoc here
-    html_doc = getHtmlDoc(search_query) 
-    soup = BeautifulSoup(html_doc, 'html.parser')
-    filters = soup.find_all('div', class_="yosegi-FilterPill-dropdownPillContainer")
-    filter_dict = {}
-    for f in filters:
-        filter_name = f.find('div', class_='yosegi-FilterPill-pillLabel').string.strip() 
-        if(filter_name == 'Date posted'):
-            continue
-        list_items=f.find_all('li')
-        dict1 = {}
-        for li in list_items:
-            filter_list_item = li.a.string.strip()
-            iop = filter_list_item.index('(') # get index of opening paranthesis
-            list_item_name = filter_list_item[:iop-1]
-            list_item_value = filter_list_item[iop+1:len(filter_list_item)-1]
-            list_item_value = int(list_item_value.replace(',', '')) # convert String value to integer value
-            dict1[list_item_name] = list_item_value
-        filter_dict[filter_name] = dict1
-    # print(filter_dict)
-    return filter_dict
+    # html_doc = getHtmlDoc(search_query) 
+    with open('static/indeed-out.html', 'r') as html_doc:
+        print(html_doc)
+        soup = BeautifulSoup(html_doc, 'html.parser')
+        filters = soup.find_all('div', class_="yosegi-FilterPill-dropdownPillContainer")
+        filter_dict = {}
+        for f in filters:
+            filter_name = f.find('div', class_='yosegi-FilterPill-pillLabel').string.strip() 
+            if(filter_name == 'Date posted'):
+                continue
+            list_items=f.find_all('li')
+            dict1 = {}
+            for li in list_items:
+                filter_list_item = li.a.string.strip()
+                iop = filter_list_item.index('(') # get index of opening paranthesis
+                list_item_name = filter_list_item[:iop-1]
+                list_item_value = filter_list_item[iop+1:len(filter_list_item)-1]
+                list_item_value = int(list_item_value.replace(',', '')) # convert String value to integer value
+                dict1[list_item_name] = list_item_value
+            filter_dict[filter_name] = dict1
+        # print(filter_dict)
+        return filter_dict
