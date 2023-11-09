@@ -1,0 +1,36 @@
+/*Homepage navigation bar styling */
+.navbar-brand-img {
+  height: 39px;
+}
+/* Homepage searchbar styling */
+.search-bar {
+  height: max-content;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input.form-control {
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: none;
+}
+
+.search-bar button {
+  border: none;
+  border-radius: 10px; 
+  margin: 5px;
+  background-color: #2557a7;
+  color: #fff;
+}
+ 
+.search-bar .input-group {
+  padding: 10px;
+}
+
+.search-bar  form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
