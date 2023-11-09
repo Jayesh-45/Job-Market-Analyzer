@@ -23,6 +23,13 @@ def index(request):
         plot_recruiter(search_results['Company'])
     if 'Job Language' in search_results:
         plot_job_language(search_results['Job Language'])
+    if 'Job type' in search_results:
+        plot_job_type(search_results['Job type'])
+    if 'Programming language' in search_results:
+        print("Programming language...")
+        print(search_results)
+        plot_skill_cloud(search_results['Programming language'])
+        # plot_skill_cloud(search_results['Programming Language'])
     return render(request, 'home.html', {'search_query': search_query, 'search_results' : search_results})
 
 def about(request):
