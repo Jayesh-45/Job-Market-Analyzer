@@ -118,8 +118,16 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+#     os.path.join(BASE_DIR, 'registration/Login_and_Signup/static/img/plots/'),  # Replace 'static' with your static files directory
+
+# ]
+
+
 STATICFILES_DIRS = [
-    BASE_DIR / "static"
+    BASE_DIR / "static",
+    # BASE_DIR / "registration" / "Login_and_Signup" / "static" / "img" / "plots",
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

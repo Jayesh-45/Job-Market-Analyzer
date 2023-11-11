@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 
+
+
 # Create your views here.
 @login_required(login_url='login')
 
@@ -43,6 +45,23 @@ def LoginPage(request):
 def LogoutPage(request):
     logout(request)
     return redirect('login')
+
+def plot_view(request):
+    # Your web scraping and plot generation logic...
+
+    education_plot = 'img/plots/education_plot.png'
+    job_language_plot = 'img/plots/job_language_plot.png'
+    remote_plot = 'img/plots/remote_plot.png'
+    salary_dist_plot = 'img/plots/salary_dist_plot.png'
+    top_recruiter_plot = 'img/plots/top_recruiter_plot.png'
+
+    return render(request, 'home.html', {
+        'education_plot': education_plot,
+        'job_language_plot': job_language_plot,
+        'remote_plot': remote_plot,
+        'salary_dist_plot': salary_dist_plot,
+        'top_recruiter_plot': top_recruiter_plot,
+    })
 
 # def HomePage(request):
 #     return HttpResponse("Home page")
