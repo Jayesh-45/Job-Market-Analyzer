@@ -81,7 +81,7 @@ def plot_skill_cloud(skills):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')  # Remove axes and labels
     # plt.title('Skill Cloud')
-    plt.savefig('static/img/plots/skill_could_plot.png')
+    plt.savefig('static/img/plots/skill_cloud_plot.png')
 
 def plot_education(education_dict):
     education_levels = list(education_dict.keys())
