@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import matplotlib
+matplotlib.use('Agg')  # Use the 'Agg' backend (for saving to file) instead of GUI backend
 import seaborn as sns
 import pandas as pd
 from wordcloud import WordCloud
