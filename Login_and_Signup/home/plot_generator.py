@@ -66,7 +66,7 @@ def plot_salary_dist(salary_dict):
     sns.set(style="whitegrid")
     sns.barplot(x=salaries, y=job_count, palette="viridis")
 
-    plt.xlabel('Salary')
+    plt.xlabel('Salary Distribution')
     plt.ylabel('Number of Jobs')
     plt.title('Salary Distribution and Job Offerings')
 
@@ -96,6 +96,7 @@ def plot_education(education_dict):
         bar_plot.text(index, value + 10, str(value), ha='center', fontsize=12)
 
     plt.ylabel('Number of Job Openings')
+    plt.xlabel("Education Level")
     plt.title('Education vs. Number of Job Openings')
 
     plt.tight_layout()
@@ -136,7 +137,8 @@ def plot_job_language(job_language_dict):
     # Add count labels above the bars
     for index, value in enumerate(job_openings):
         bar_plot.text(index, value + 10, str(value), ha='center', fontsize=12)
-    plt.ylabel('Number of Job Openings')
+    plt.xlabel("Job Language")
+    plt.ylabel('Number of Job Openings') 
     plt.title('Job Language and Number of Openings')
 
     plt.tight_layout() 

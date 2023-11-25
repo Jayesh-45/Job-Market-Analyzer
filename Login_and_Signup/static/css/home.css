@@ -34,3 +34,18 @@
   justify-content: space-between;
   width: 100%;
 }
+.serach_result_header .plots-header{ 
+  text-align: center;
+}
+.job-card-body {
+  width: 70%;
+  margin: auto;
+}
+
+.job-type-location {
+  width: 50%; 
+}
+
+.plot-header {
+  text-align: center;
+}
