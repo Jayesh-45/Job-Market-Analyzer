@@ -1,2 +1,5 @@
-venv/
-Job-Market-Analyzer/myenv/
+venv/ 
+Login_and_Signup/db.sqlite3
+Login_and_Signup/static/img/plots
+Login_and_Signup/app1/migrations
+Login_and_Signup/home/migrations
