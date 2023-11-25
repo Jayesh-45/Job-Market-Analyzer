@@ -2,19 +2,18 @@ from django.shortcuts import render, HttpResponse
 from .scraper import *
 from .plot_generator import *
 # Create your views here.
-
-# index function handles views for '/' url
+ 
+# This function will envoked for the default url
+# This page provied the fuctionality to visualize data related to job trends
 def index(request):   
-    search_query = request.GET.get('search_query', None)
-    print("Search Query: ", search_query)
-    if search_query: 
-        # Get the search query from the query parameters
-        search_results = scrape_data(search_query)
-        print("search results" ,search_results)
-        #'Remote', 'Pay', 'Job type', 'Education level', 'Location', 'Company', 'Job Language'
-        # functions from plot_generator
-        # plot_remote, plot_salary_dist, plot_skill_cloud, plot_education, plot_job_type, plot_job_language,
-        # plot_locations
+    # Get Serach query from the searchbar on the home page
+    search_query = request.GET.get('search_query', None) 
+
+    if search_query:  
+        # Invoked scrape_data function to gater data related to serach query, this fuction return a dictionary
+        search_results = scrape_data(search_query) 
+
+        # Check if the perticular field exit in the result return by the scraper if the field exit generate the respective plot
         if 'Remote' in search_results:
             plot_remote(search_results['Remote'])
         if 'Pay' in search_results:
@@ -29,21 +28,26 @@ def index(request):
             plot_job_language(search_results['Job Language'])
         if 'Job type' in search_results:
             plot_job_type(search_results['Job type'])
-        if 'Programming language' in search_results:
-            print("Programming language...")
+        if 'Programming language' in search_results: 
             plot_skill_cloud(search_results['Programming language']) 
+        
+        #After generating all the plots render the plots on homepage
         return render(request, 'home.html', {'search_query': search_query, 'search_results' : search_results})
-
+    # If noting the searched by the user then return the default html page
     return render(request, 'home.html')
 
-def jobportal(request):
-    # print("request.GET", request.GET.get('search_query', None))
+
+# This will be used for job portal to find job opening across different companies
+def jobportal(request): 
+    # Capture search query
     search_query = request.GET.get('search_query', None)
-    if search_query:  
-        # print(search_data)
+    if search_query:   
+        # Invoke scapper to scrap the data
         search_result = find_jobs(search_query).to_dict(orient='records')
-        # print(type(search_result))   
+        
+        # Render the result at front end
         return render(request, 'jobportal.html', {'search_query' : search_query, 'search_result' : search_result})
+    # If noting is searched then return default job-portal html page
     return render(request, 'jobportal.html')
 def about(request):
     return HttpResponse("This is about page.")

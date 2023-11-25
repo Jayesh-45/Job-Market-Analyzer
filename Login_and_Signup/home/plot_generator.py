@@ -57,12 +57,9 @@ def plot_remote(remote_dict):
     plt.savefig("static/img/plots/remote_plot.png")
 
 def plot_salary_dist(salary_dict):
-    salaries=list(salary_dict.keys())
-    # salaries=list(map(lambda x: float(x[1:x.index('+')].replace(',', '')), salaries))
-    job_count=list(salary_dict.values()) 
-    # print("salary values", salary_values)
-    # print("Job Count", job_count)
-    plt.figure(figsize=(10, 6))  # Adjust the figure size as needed
+    salaries=list(salary_dict.keys()) 
+    job_count=list(salary_dict.values())  
+    plt.figure(figsize=(10, 6)) 
     sns.set(style="whitegrid")
     sns.barplot(x=salaries, y=job_count, palette="viridis")
 
@@ -75,6 +72,7 @@ def plot_salary_dist(salary_dict):
     plt.tight_layout()
     plt.savefig('static/img/plots/salary_dist_plot.png')
 
+# This will generate skill could for most demanded skills
 def plot_skill_cloud(skills):
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(skills)
     plt.figure(figsize=(10, 6))
@@ -83,11 +81,13 @@ def plot_skill_cloud(skills):
     # plt.title('Skill Cloud')
     plt.savefig('static/img/plots/skill_cloud_plot.png')
 
+# Function to generate bar plot for number of openings againts education level 
 def plot_education(education_dict):
+    # C
     education_levels = list(education_dict.keys())
-    job_openings = list(education_dict.values())  # Replace with your actual data
+    job_openings = list(education_dict.values()) 
 
-    plt.figure(figsize=(10, 6))  # Adjust the figure size as needed
+    plt.figure(figsize=(10, 6))
     sns.set(style="whitegrid")
 
     bar_plot = sns.barplot(x=education_levels, y=job_openings, palette="viridis")
