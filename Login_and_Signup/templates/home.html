@@ -23,16 +23,17 @@
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="/jobsearch">Search Jobs</a>
               </li>
+              
               <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
-              </li>
+                  <a class="nav-link" href="/about">About</a>
+              </li> 
               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="/contact">Contact</a>
               </li>
           </ul>
       </div>
@@ -59,49 +60,50 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <div class="wrapper">
-      <h1>Plots</h1>
+      {% if search_query %}
+      <h1 class="plots-header">Related Tends</h1>
+      {% endif %}
+    <div class="wrapper"> 
       <div class="container1">
-      
-      <div class="gallery">
-        <figure class="card">
-          <img src="{% static '/img/plots/education_plot.png' %}" alt="education_plot Plot">
-          <figcaption>education_plot</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="{% static '/img/plots/job_language_plot.png' %}" alt="job_language_plot Plot">
-          <figcaption>job_language_plot</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="{% static '/img/plots/remote_plot.png' %}" alt="remote_plot Plot">
-          <figcaption>remote_plot</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="{% static '/img/plots/salary_dist_plot.png' %}" alt="salary_dist_plot Plot">
-          <figcaption>salary_dist_plot</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="{% static '/img/plots/top_recruiter_plot.png' %}" alt="top_recruiter_plot Plot">
-          <figcaption>top_recruiter_plot</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="{% static '/img/plots/top_recruiter_plot.png' %}" alt="top_recruiter_plot Plot">
-          <figcaption>top_recruiter_plot</figcaption>
-        </figure>
-
-
+      {% if search_query %}
+      <div class="gallery"> 
+          <figure class="card my-5">
+            <h3 class="plot-header my-2">Education Level</h3>
+            <img src="{% static '/img/plots/education_plot.png' %}" alt="education_plot Plot">
+            <figcaption></figcaption>
+          </figure> 
+         
+          <figure class="card my-5">
+            <h3 class="plot-header my-2">Top Recruiters</h3>
+            <img src="{% static '/img/plots/top_recruiter_plot.png' %}" alt="top_recruiter_plot Plot">
+            <figcaption></figcaption>
+          </figure> 
+          <figure class="card my-5">
+            <h3 class="plot-header my-2">Salary Distributions</h3>
+            <img src="{% static '/img/plots/salary_dist_plot.png' %}" alt="salary_dist_plot Plot">
+            <figcaption></figcaption>
+          </figure> 
+          <figure class="card my-5"> 
+            <h3 class="plot-header my-2">Top skills</h3>
+            <img src="{% static '/img/plots/skill_cloud_plot.png' %}" alt="top_recruiter_plot Plot">
+            <figcaption></figcaption>
+          </figure>  
+          <figure class="card my-5">
+            <h3 class="plot-header my-2">Jobs according to Language</h3>
+            <img src="{% static '/img/plots/job_language_plot.png' %}" alt="job_language_plot Plot">
+            <figcaption></figcaption>
+          </figure> 
+ 
+          <figure class="card my-5">
+            <h3 class="plot-header my-2">Job type</h3>
+            <img src="{% static '/img/plots/remote_plot.png' %}" alt="remote_plot Plot">
+            <figcaption></figcaption>
+          </figure> 
+            
       </div>
-
-     
+      {% endif %}
+       
       </div>
     </div>
-  
-
   </body>
 </html>

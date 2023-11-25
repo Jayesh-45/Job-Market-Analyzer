@@ -48,7 +48,7 @@ def LogoutPage(request):
 
 def plot_view(request):
     # Your web scraping and plot generation logic...
-
+    
     education_plot = 'img/plots/education_plot.png'
     job_language_plot = 'img/plots/job_language_plot.png'
     remote_plot = 'img/plots/remote_plot.png'
