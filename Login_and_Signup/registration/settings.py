@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1',
+    # Add your apps here
+    'home.apps.HomeConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +78,14 @@ WSGI_APPLICATION = 'registration.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME' : 'jobscannerdb',
+        'USER' : 'admin',
+        'PASSWORD' : 'admin',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
+
     }
 }
 

@@ -1,6 +1,8 @@
 from django.shortcuts import render, HttpResponse 
 from .scraper import *
 from .plot_generator import *
+from datetime import datetime
+from home.models import Contact
 # Create your views here.
  
 # This function will envoked for the default url
@@ -52,5 +54,15 @@ def jobportal(request):
 def about(request):
     return HttpResponse("This is about page.")
 
-def about(request):
-    return HttpResponse("This is contact page.")
+def contact(request):
+    if request.method == 'POST': 
+        # Get the fields from the from
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')  
+        if name != None and email != None and message != None:
+            # Create contact instance
+            contact = Contact(name=name, email=email, message=message, date=datetime.today())
+            # Save the contanct details in the database
+            contact.save()
+    return render(request, 'contact.html')

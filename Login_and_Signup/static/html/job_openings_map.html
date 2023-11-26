@@ -12,7 +12,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_46d2fbfb357a6aa8633abc9c3a465d1b {
+                #map_968f9109e8838747d22553f70b094e14 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_46d2fbfb357a6aa8633abc9c3a465d1b" ></div>
+            <div class="folium-map" id="map_968f9109e8838747d22553f70b094e14" ></div>
         
 </body>
 <script>
     
     
-            var map_46d2fbfb357a6aa8633abc9c3a465d1b = L.map(
-                "map_46d2fbfb357a6aa8633abc9c3a465d1b",
+            var map_968f9109e8838747d22553f70b094e14 = L.map(
+                "map_968f9109e8838747d22553f70b094e14",
                 {
                     center: [20.5937, 78.9629],
                     crs: L.CRS.EPSG3857,
@@ -60,301 +60,303 @@
 
         
     
-            var tile_layer_609bd0cf7360c39ae5ede34c49f1135a = L.tileLayer(
+            var tile_layer_15d42920d3048759590e4f0c829415cb = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+            );
         
     
-            var circle_marker_44c63def04abcd93e26f904ac78d3c9e = L.circleMarker(
+                tile_layer_15d42920d3048759590e4f0c829415cb.addTo(map_968f9109e8838747d22553f70b094e14);
+    
+            var circle_marker_a9f8e19811c6afdb4197681467e31040 = L.circleMarker(
                 [12.9767936, 77.590082],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.152, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.224, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_9acc2cc2e71e59e89a7581bf054e8b48 = L.popup({"maxWidth": "100%"});
+        var popup_838b3fc013e3397755b6a90a5d584404 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_89fe282a050cd7dfb6ece670134f5918 = $(`<div id="html_89fe282a050cd7dfb6ece670134f5918" style="width: 100.0%; height: 100.0%;">Bengaluru, Karnataka<br>Job Openings: 16076</div>`)[0];
-                popup_9acc2cc2e71e59e89a7581bf054e8b48.setContent(html_89fe282a050cd7dfb6ece670134f5918);
+                var html_edd9869a3b69ae0f9055e1cf5758534d = $(`<div id="html_edd9869a3b69ae0f9055e1cf5758534d" style="width: 100.0%; height: 100.0%;">Bengaluru, Karnataka<br>Job Openings: 16112</div>`)[0];
+                popup_838b3fc013e3397755b6a90a5d584404.setContent(html_edd9869a3b69ae0f9055e1cf5758534d);
             
         
 
-        circle_marker_44c63def04abcd93e26f904ac78d3c9e.bindPopup(popup_9acc2cc2e71e59e89a7581bf054e8b48)
+        circle_marker_a9f8e19811c6afdb4197681467e31040.bindPopup(popup_838b3fc013e3397755b6a90a5d584404)
         ;
 
         
     
     
-            var circle_marker_f71c96bcaf0228dee8f05c5f9856db80 = L.circleMarker(
+            var circle_marker_bc39ff40d65fe201426680857b88ad9f = L.circleMarker(
                 [17.360589, 78.4740613],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.354, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.376, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_ac31f992e130ca4dcae25705dbae267a = L.popup({"maxWidth": "100%"});
+        var popup_d34fdee33c54cb34a5a73b7cc14c0b17 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ddbe1a582cc67849c59727e3c2135459 = $(`<div id="html_ddbe1a582cc67849c59727e3c2135459" style="width: 100.0%; height: 100.0%;">Hyderabad, Telangana<br>Job Openings: 6677</div>`)[0];
-                popup_ac31f992e130ca4dcae25705dbae267a.setContent(html_ddbe1a582cc67849c59727e3c2135459);
+                var html_2e22011b2a4df94b11ac451dd300105c = $(`<div id="html_2e22011b2a4df94b11ac451dd300105c" style="width: 100.0%; height: 100.0%;">Hyderabad, Telangana<br>Job Openings: 6688</div>`)[0];
+                popup_d34fdee33c54cb34a5a73b7cc14c0b17.setContent(html_2e22011b2a4df94b11ac451dd300105c);
             
         
 
-        circle_marker_f71c96bcaf0228dee8f05c5f9856db80.bindPopup(popup_ac31f992e130ca4dcae25705dbae267a)
+        circle_marker_bc39ff40d65fe201426680857b88ad9f.bindPopup(popup_d34fdee33c54cb34a5a73b7cc14c0b17)
         ;
 
         
     
     
-            var circle_marker_b67d5310bf490edf74a31f5371a8ce1f = L.circleMarker(
+            var circle_marker_473fb707459046579a751d25f797aeba = L.circleMarker(
                 [18.521428, 73.8544541],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.058, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.06, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_97d59abdce5026fc2b404a2d51ae2392 = L.popup({"maxWidth": "100%"});
+        var popup_e837494959caf315b5d92996084330b1 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_944e59e3407eee3a730c574d35c00a9f = $(`<div id="html_944e59e3407eee3a730c574d35c00a9f" style="width: 100.0%; height: 100.0%;">Pune, Maharashtra<br>Job Openings: 6029</div>`)[0];
-                popup_97d59abdce5026fc2b404a2d51ae2392.setContent(html_944e59e3407eee3a730c574d35c00a9f);
+                var html_55266339e33c9a19739e57a8f031dbbd = $(`<div id="html_55266339e33c9a19739e57a8f031dbbd" style="width: 100.0%; height: 100.0%;">Pune, Maharashtra<br>Job Openings: 6030</div>`)[0];
+                popup_e837494959caf315b5d92996084330b1.setContent(html_55266339e33c9a19739e57a8f031dbbd);
             
         
 
-        circle_marker_b67d5310bf490edf74a31f5371a8ce1f.bindPopup(popup_97d59abdce5026fc2b404a2d51ae2392)
+        circle_marker_473fb707459046579a751d25f797aeba.bindPopup(popup_e837494959caf315b5d92996084330b1)
         ;
 
         
     
     
-            var circle_marker_6183a2abfcfb666e2b974da35fb40206 = L.circleMarker(
+            var circle_marker_c20602bbc36cdc394aeb82f61be2bcdd = L.circleMarker(
                 [13.0836939, 80.270186],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.302, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.306, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_a68189909103af8008d06e1af1714292 = L.popup({"maxWidth": "100%"});
+        var popup_d6ccff74aec5e3383cd226ea61c4884f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_cee7124f7282ae967995acf4eb3b6ce0 = $(`<div id="html_cee7124f7282ae967995acf4eb3b6ce0" style="width: 100.0%; height: 100.0%;">Chennai, Tamil Nadu<br>Job Openings: 4651</div>`)[0];
-                popup_a68189909103af8008d06e1af1714292.setContent(html_cee7124f7282ae967995acf4eb3b6ce0);
+                var html_c3d7ab1856bb025e7f7c13ef01862ee7 = $(`<div id="html_c3d7ab1856bb025e7f7c13ef01862ee7" style="width: 100.0%; height: 100.0%;">Chennai, Tamil Nadu<br>Job Openings: 4653</div>`)[0];
+                popup_d6ccff74aec5e3383cd226ea61c4884f.setContent(html_c3d7ab1856bb025e7f7c13ef01862ee7);
             
         
 
-        circle_marker_6183a2abfcfb666e2b974da35fb40206.bindPopup(popup_a68189909103af8008d06e1af1714292)
+        circle_marker_c20602bbc36cdc394aeb82f61be2bcdd.bindPopup(popup_d6ccff74aec5e3383cd226ea61c4884f)
         ;
 
         
     
     
-            var circle_marker_eb341657c4a509fdae87c31593812349 = L.circleMarker(
+            var circle_marker_274c75aecb0c2110aabca301615f0159 = L.circleMarker(
                 [19.0785451, 72.878176],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.522, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.49, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_be0e85a4c8b198856b6d80b1472119e7 = L.popup({"maxWidth": "100%"});
+        var popup_4b08ea530fd497fc9a297fa4b313ffe5 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_3fa6e7f2dbb609a8088fc11fc6d2c878 = $(`<div id="html_3fa6e7f2dbb609a8088fc11fc6d2c878" style="width: 100.0%; height: 100.0%;">Mumbai, Maharashtra<br>Job Openings: 3761</div>`)[0];
-                popup_be0e85a4c8b198856b6d80b1472119e7.setContent(html_3fa6e7f2dbb609a8088fc11fc6d2c878);
+                var html_bbfd23906569e936bf1e642679953fb2 = $(`<div id="html_bbfd23906569e936bf1e642679953fb2" style="width: 100.0%; height: 100.0%;">Mumbai, Maharashtra<br>Job Openings: 3745</div>`)[0];
+                popup_4b08ea530fd497fc9a297fa4b313ffe5.setContent(html_bbfd23906569e936bf1e642679953fb2);
             
         
 
-        circle_marker_eb341657c4a509fdae87c31593812349.bindPopup(popup_be0e85a4c8b198856b6d80b1472119e7)
+        circle_marker_274c75aecb0c2110aabca301615f0159.bindPopup(popup_4b08ea530fd497fc9a297fa4b313ffe5)
         ;
 
         
     
     
-            var circle_marker_4f59a2ab2484ca68200b6b75b0f3255b = L.circleMarker(
-                [43.0059455, -123.8925908],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.176, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
-        
-    
-        var popup_ed5fa8b586cae40ef78e10d6df35159d = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_e944807eb150f075ddfeb30983774624 = $(`<div id="html_e944807eb150f075ddfeb30983774624" style="width: 100.0%; height: 100.0%;">Remote<br>Job Openings: 2588</div>`)[0];
-                popup_ed5fa8b586cae40ef78e10d6df35159d.setContent(html_e944807eb150f075ddfeb30983774624);
-            
-        
-
-        circle_marker_4f59a2ab2484ca68200b6b75b0f3255b.bindPopup(popup_ed5fa8b586cae40ef78e10d6df35159d)
-        ;
-
-        
-    
-    
-            var circle_marker_38c528b9a46a25d7445f7249a26e4cd7 = L.circleMarker(
+            var circle_marker_dfb62f98e807e6c3b08e0f8bfc5259db = L.circleMarker(
                 [28.5706333, 77.3272147],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.168, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.19, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_fdbb15d31fa3215dd1aa586c60754c6a = L.popup({"maxWidth": "100%"});
+        var popup_7cd9a35d952c03fc79119e876bc4e2d6 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_532ca8bc28c9514dfef1002dd6717331 = $(`<div id="html_532ca8bc28c9514dfef1002dd6717331" style="width: 100.0%; height: 100.0%;">Noida, Uttar Pradesh<br>Job Openings: 2584</div>`)[0];
-                popup_fdbb15d31fa3215dd1aa586c60754c6a.setContent(html_532ca8bc28c9514dfef1002dd6717331);
+                var html_8856589d55c1c6f57101cb1fcf5d5a0d = $(`<div id="html_8856589d55c1c6f57101cb1fcf5d5a0d" style="width: 100.0%; height: 100.0%;">Noida, Uttar Pradesh<br>Job Openings: 2595</div>`)[0];
+                popup_7cd9a35d952c03fc79119e876bc4e2d6.setContent(html_8856589d55c1c6f57101cb1fcf5d5a0d);
             
         
 
-        circle_marker_38c528b9a46a25d7445f7249a26e4cd7.bindPopup(popup_fdbb15d31fa3215dd1aa586c60754c6a)
+        circle_marker_dfb62f98e807e6c3b08e0f8bfc5259db.bindPopup(popup_7cd9a35d952c03fc79119e876bc4e2d6)
         ;
 
         
     
     
-            var circle_marker_d538192f7088d6783e0715776b4b336e = L.circleMarker(
+            var circle_marker_a3ff8adaeb2657e1d85fae3c764f05f1 = L.circleMarker(
+                [43.0059455, -123.8925908],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.17, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
+        
+    
+        var popup_e6f6fece156255787f537f7097aacc54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f71278fc44f8dd717968b2b7567e6b6 = $(`<div id="html_8f71278fc44f8dd717968b2b7567e6b6" style="width: 100.0%; height: 100.0%;">Remote<br>Job Openings: 2585</div>`)[0];
+                popup_e6f6fece156255787f537f7097aacc54.setContent(html_8f71278fc44f8dd717968b2b7567e6b6);
+            
+        
+
+        circle_marker_a3ff8adaeb2657e1d85fae3c764f05f1.bindPopup(popup_e6f6fece156255787f537f7097aacc54)
+        ;
+
+        
+    
+    
+            var circle_marker_6e21c8a5b3e00083e4e06b5457f8975e = L.circleMarker(
                 [23.0216238, 72.5797068],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.094, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.112, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_1d55546e679371e0d7b460a0b265ecc6 = L.popup({"maxWidth": "100%"});
+        var popup_79f2926ebd5c5917eca38b35736a14c8 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_8fc86d764e4fa91dcf8980cfe0324196 = $(`<div id="html_8fc86d764e4fa91dcf8980cfe0324196" style="width: 100.0%; height: 100.0%;">Ahmedabad, Gujarat<br>Job Openings: 2547</div>`)[0];
-                popup_1d55546e679371e0d7b460a0b265ecc6.setContent(html_8fc86d764e4fa91dcf8980cfe0324196);
+                var html_38296d70291776828701bed0c2700d72 = $(`<div id="html_38296d70291776828701bed0c2700d72" style="width: 100.0%; height: 100.0%;">Ahmedabad, Gujarat<br>Job Openings: 2556</div>`)[0];
+                popup_79f2926ebd5c5917eca38b35736a14c8.setContent(html_38296d70291776828701bed0c2700d72);
             
         
 
-        circle_marker_d538192f7088d6783e0715776b4b336e.bindPopup(popup_1d55546e679371e0d7b460a0b265ecc6)
+        circle_marker_6e21c8a5b3e00083e4e06b5457f8975e.bindPopup(popup_79f2926ebd5c5917eca38b35736a14c8)
         ;
 
         
     
     
-            var circle_marker_4f7f2da3e197a2608b4a63061a1b9935 = L.circleMarker(
+            var circle_marker_4f08c08e87cc18a77aaa1a04e0ca6852 = L.circleMarker(
                 [28.42826235, 77.00270014657752],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.066, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.056, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_8429feeb872de4ccfd39fbfc214a9648 = L.popup({"maxWidth": "100%"});
+        var popup_5c1f72470df4247b8848a6decf858b87 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_223cd620f60b4aa95566be8f0c42ff41 = $(`<div id="html_223cd620f60b4aa95566be8f0c42ff41" style="width: 100.0%; height: 100.0%;">Gurgaon, Haryana<br>Job Openings: 2533</div>`)[0];
-                popup_8429feeb872de4ccfd39fbfc214a9648.setContent(html_223cd620f60b4aa95566be8f0c42ff41);
+                var html_d130231faff50c530557f52019a1b5e6 = $(`<div id="html_d130231faff50c530557f52019a1b5e6" style="width: 100.0%; height: 100.0%;">Gurgaon, Haryana<br>Job Openings: 2528</div>`)[0];
+                popup_5c1f72470df4247b8848a6decf858b87.setContent(html_d130231faff50c530557f52019a1b5e6);
             
         
 
-        circle_marker_4f7f2da3e197a2608b4a63061a1b9935.bindPopup(popup_8429feeb872de4ccfd39fbfc214a9648)
+        circle_marker_4f08c08e87cc18a77aaa1a04e0ca6852.bindPopup(popup_5c1f72470df4247b8848a6decf858b87)
         ;
 
         
     
     
-            var circle_marker_0ea1f711fcc144ca4194a86f33d4d294 = L.circleMarker(
+            var circle_marker_95235d1974fd7f90ec0d85949d9eec41 = L.circleMarker(
                 [22.9964948, 87.6855882],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.716, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.712, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_b3560297339930a798b17c7b34244cae = L.popup({"maxWidth": "100%"});
+        var popup_93820b4e8800302ee20ab66fbb00b9da = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c86fb31d728dd060a0b1bf5420da3742 = $(`<div id="html_c86fb31d728dd060a0b1bf5420da3742" style="width: 100.0%; height: 100.0%;">West Bengal<br>Job Openings: 1358</div>`)[0];
-                popup_b3560297339930a798b17c7b34244cae.setContent(html_c86fb31d728dd060a0b1bf5420da3742);
+                var html_a9f71af1cdf1becac514fb32b4003079 = $(`<div id="html_a9f71af1cdf1becac514fb32b4003079" style="width: 100.0%; height: 100.0%;">West Bengal<br>Job Openings: 1356</div>`)[0];
+                popup_93820b4e8800302ee20ab66fbb00b9da.setContent(html_a9f71af1cdf1becac514fb32b4003079);
             
         
 
-        circle_marker_0ea1f711fcc144ca4194a86f33d4d294.bindPopup(popup_b3560297339930a798b17c7b34244cae)
+        circle_marker_95235d1974fd7f90ec0d85949d9eec41.bindPopup(popup_93820b4e8800302ee20ab66fbb00b9da)
         ;
 
         
     
     
-            var circle_marker_3dd53c0cef3e8d10cec8567fd35ee5e5 = L.circleMarker(
+            var circle_marker_5493339d42cec3213f08b4c29478efc2 = L.circleMarker(
                 [9.9674277, 76.2454436],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.354, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.346, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_a24a00a300d73727920ee1cda027964f = L.popup({"maxWidth": "100%"});
+        var popup_be9aab40e8e90a98db8af42ce5d83973 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_cb06d1fb1df1b7c0f8eb1398cf0ffb50 = $(`<div id="html_cb06d1fb1df1b7c0f8eb1398cf0ffb50" style="width: 100.0%; height: 100.0%;">Kochi, Kerala<br>Job Openings: 1177</div>`)[0];
-                popup_a24a00a300d73727920ee1cda027964f.setContent(html_cb06d1fb1df1b7c0f8eb1398cf0ffb50);
+                var html_32bc07c69f5a86b86fb27f25e83f2962 = $(`<div id="html_32bc07c69f5a86b86fb27f25e83f2962" style="width: 100.0%; height: 100.0%;">Kochi, Kerala<br>Job Openings: 1173</div>`)[0];
+                popup_be9aab40e8e90a98db8af42ce5d83973.setContent(html_32bc07c69f5a86b86fb27f25e83f2962);
             
         
 
-        circle_marker_3dd53c0cef3e8d10cec8567fd35ee5e5.bindPopup(popup_a24a00a300d73727920ee1cda027964f)
+        circle_marker_5493339d42cec3213f08b4c29478efc2.bindPopup(popup_be9aab40e8e90a98db8af42ce5d83973)
         ;
 
         
     
     
-            var circle_marker_67097ad22ed466386f7e4801eb473c91 = L.circleMarker(
+            var circle_marker_f34919c491ea8a1df21efa2cb60d112c = L.circleMarker(
                 [42.2781401, -74.9159946],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.11, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.118, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_b058ec9587755ff7dd17b81d44403047 = L.popup({"maxWidth": "100%"});
+        var popup_a75f6406d27e4f52c3ddc4ec2f075a50 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_9ec43e8e1d8d61d8d8471fe08578ff3d = $(`<div id="html_9ec43e8e1d8d61d8d8471fe08578ff3d" style="width: 100.0%; height: 100.0%;">Delhi, Delhi<br>Job Openings: 1055</div>`)[0];
-                popup_b058ec9587755ff7dd17b81d44403047.setContent(html_9ec43e8e1d8d61d8d8471fe08578ff3d);
+                var html_7df636cf95de0a3a1890204c8a13292c = $(`<div id="html_7df636cf95de0a3a1890204c8a13292c" style="width: 100.0%; height: 100.0%;">Delhi, Delhi<br>Job Openings: 1059</div>`)[0];
+                popup_a75f6406d27e4f52c3ddc4ec2f075a50.setContent(html_7df636cf95de0a3a1890204c8a13292c);
             
         
 
-        circle_marker_67097ad22ed466386f7e4801eb473c91.bindPopup(popup_b058ec9587755ff7dd17b81d44403047)
+        circle_marker_f34919c491ea8a1df21efa2cb60d112c.bindPopup(popup_a75f6406d27e4f52c3ddc4ec2f075a50)
         ;
 
         
     
     
-            var circle_marker_be9b0be95def0004f6ee88db581fad96 = L.circleMarker(
+            var circle_marker_89bf653bf301a8d4c99422b324eb42b8 = L.circleMarker(
                 [30.7041168, 76.7176885],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.11, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.114, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_c26399b6838afaa13bd155ecdc555835 = L.popup({"maxWidth": "100%"});
+        var popup_85460289f575af4fc8c09be905981f87 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_27d8864b4d99c67b18fa20c58b88fda9 = $(`<div id="html_27d8864b4d99c67b18fa20c58b88fda9" style="width: 100.0%; height: 100.0%;">Mohali, Punjab<br>Job Openings: 1055</div>`)[0];
-                popup_c26399b6838afaa13bd155ecdc555835.setContent(html_27d8864b4d99c67b18fa20c58b88fda9);
+                var html_b25b101c0da038616c0837863498b8f8 = $(`<div id="html_b25b101c0da038616c0837863498b8f8" style="width: 100.0%; height: 100.0%;">Mohali, Punjab<br>Job Openings: 1057</div>`)[0];
+                popup_85460289f575af4fc8c09be905981f87.setContent(html_b25b101c0da038616c0837863498b8f8);
             
         
 
-        circle_marker_be9b0be95def0004f6ee88db581fad96.bindPopup(popup_c26399b6838afaa13bd155ecdc555835)
+        circle_marker_89bf653bf301a8d4c99422b324eb42b8.bindPopup(popup_85460289f575af4fc8c09be905981f87)
         ;
 
         
     
     
-            var circle_marker_4a39091c38eee7df4bacdb802a7086a9 = L.circleMarker(
+            var circle_marker_56ea395af043364f81f56009ae19de75 = L.circleMarker(
                 [26.9154576, 75.8189817],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.974, "stroke": true, "weight": 3}
-            ).addTo(map_46d2fbfb357a6aa8633abc9c3a465d1b);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.966, "stroke": true, "weight": 3}
+            ).addTo(map_968f9109e8838747d22553f70b094e14);
         
     
-        var popup_a5840b2b5208c7e265cb23faa497b59f = L.popup({"maxWidth": "100%"});
+        var popup_f3f402ba533391bf1727d6e55d969a75 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_0c7c1d4865be53f156e1409f1ceb5ec1 = $(`<div id="html_0c7c1d4865be53f156e1409f1ceb5ec1" style="width: 100.0%; height: 100.0%;">Jaipur, Rajasthan<br>Job Openings: 987</div>`)[0];
-                popup_a5840b2b5208c7e265cb23faa497b59f.setContent(html_0c7c1d4865be53f156e1409f1ceb5ec1);
+                var html_6165495687515d3756736d6b3abd0801 = $(`<div id="html_6165495687515d3756736d6b3abd0801" style="width: 100.0%; height: 100.0%;">Jaipur, Rajasthan<br>Job Openings: 983</div>`)[0];
+                popup_f3f402ba533391bf1727d6e55d969a75.setContent(html_6165495687515d3756736d6b3abd0801);
             
         
 
-        circle_marker_4a39091c38eee7df4bacdb802a7086a9.bindPopup(popup_a5840b2b5208c7e265cb23faa497b59f)
+        circle_marker_56ea395af043364f81f56009ae19de75.bindPopup(popup_f3f402ba533391bf1727d6e55d969a75)
         ;
 
         
