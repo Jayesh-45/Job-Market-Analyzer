@@ -17,8 +17,17 @@ The Job Market Analyzer is a web application designed to provide insights into c
 ## Getting Started
 
 - Prerequisites
-  Python
-  Django 
+  django
+  matplotlib
+  requests
+  pandas
+  bs4
+  wordcloud
+  geopy
+  folium
+  seaborn
+  python-jobspy
+ 
 
 ## Installation
 
