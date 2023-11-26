@@ -17,6 +17,7 @@ The Job Market Analyzer is a web application designed to provide insights into c
 ## Getting Started
 
 - Prerequisites
+  
   django
   matplotlib
   requests
