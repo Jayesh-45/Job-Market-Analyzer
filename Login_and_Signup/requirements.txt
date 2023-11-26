@@ -1,0 +1,10 @@
+django
+matplotlib
+requests
+pandas
+bs4
+wordcloud
+geopy
+folium
+seaborn
+python-jobspy
